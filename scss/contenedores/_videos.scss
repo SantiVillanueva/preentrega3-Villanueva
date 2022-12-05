@@ -1,0 +1,24 @@
+//archivos secundarios
+@import "../utilidades/mixin";
+/*videos*/
+main{
+    h1{
+        @include titulo;
+    }
+    .container{
+        div{
+            div{
+                div{
+                    div{
+                        .d-block{
+                            display: flex;
+                            height: 315px;  
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

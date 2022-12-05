@@ -1,0 +1,30 @@
+/*recitales*/
+//importar archivos secundarios
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+main{
+    h1{
+        @include titulo;
+    }
+    .recitales{
+        @include flex;
+        font-size: 15px;
+        font-weight: bold;
+       
+        .recitales__lista{
+            background-color: $color-contenedor;
+            @include box-shadow;
+            tr{
+                .recitales__lugar{
+                    text-align:left;
+                    padding: 0.5rem;
+                }
+                .recitales__fecha{
+                    text-align: right;
+                    padding: 0.5rem;           
+            }
+            }
+        }
+    }
+}

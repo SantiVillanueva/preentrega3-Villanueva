@@ -1,0 +1,20 @@
+
+@mixin box-shadow{
+    box-shadow: 7px 13px 37px black;      
+    border: 1px solid black;    
+}
+
+@mixin  flex {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;  
+    padding: 1rem; 
+}
+
+@mixin titulo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: $color-titulo;
+    margin-top: 1rem;    
+}

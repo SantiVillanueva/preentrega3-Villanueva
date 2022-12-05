@@ -1,222 +1,206 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-/*body*/
-body{
-    background-image: url("../extras/fondo.jpg");
-    font-family: 'Roboto Mono', monospace;  
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-/*menu*/
-
-header{
-    font-size: 25px;
-    font-weight: bold;
-    color: #212a46;
-    background-color: #8ac72f;
-}
-.titulo{
-    font-size: 30px;
-}
-.logo{
-    width: 10%;
-}
-
-#navbarSupportedContent{
-    justify-content: end;
-}
-
-/*Titulos del cuerpo*/
-.h1__titulo{
- 
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    color: #e9e9e9;
-  
-}
 /*inicio*/
-.foto__single{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.foto__single a img {
+main .foto__single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; }
+  main .foto__single a img {
     display: flex;
     width: 100%;
     animation-name: img-latido;
     animation-iteration-count: infinite;
-    animation-duration: 2s; 
-    animation-direction: alternate-reverse;
-}
+    animation-duration: 2s;
+    animation-direction: alternate-reverse; }
 
 @keyframes img-latido {
-    0%{
-        transform: scale(1.01)
-} 
-100%{
-    transform: scale(0.95)
-}
-}
+  0% {
+    transform: scale(1.01); }
+  100% {
+    transform: scale(0.95); } }
 
-
-/*Quienes Somos*/
-
-.quienessomos__contenedor{
-    display: none;
-}
-
-.quienessomos{
-    text-align: left; 
-    display: block;
-    display: flex;
-    background-color: #e1e1dd;
-    padding: 1rem;
-    margin: 3rem;
-    box-shadow: 1px 1px 5px black;
-}
-
-/*Contacto*/
-.contacto__contenedor{
+/*contacto*/
+main .contacto__contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  padding-top: 2rem; }
+  main .contacto__contenedor .contacto__formulario {
     display: flex;
     justify-content: center;
-    margin: 2rem;
-    padding-top: 2rem;  
-}
-.contacto__formulario{
-    display: flex;
-    justify-content: center;
-    background-color: #e1e1dd;
+    background-color: #b5b9a6;
     font-size: 25px;
-    padding: 1rem;
-    box-shadow: 7px 13px 37px black;          
-}
-.contacto__boton{
-    font-size: 22px;
-    padding: 3px;
-    background-color: #384674;
-    color: whitesmoke;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px #252e4b;
-}
-.contacto__input{
-    width: 100%;
-    border: none;
-} 
-.contacto__obligatorio{
-    font-size: 15px;
-
-}
-
-/*recitales*/
-
-.recitales{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
     font-weight: bold;
-  }
-.recitales_lista{
-    background-color: #e1e1dd;
-    width: 50%; 
-    margin: 2rem;
-    box-shadow: 7px 13px 37px black;      
-    border: 1px solid black;
-   }
-.recitales__lugar{
-    text-align:left;
-    padding: 0.5rem;
+    padding: 1rem;
+    box-shadow: 7px 13px 37px black;
+    border: 1px solid black; }
+    main .contacto__contenedor .contacto__formulario form fieldset div .contacto__input {
+      width: 100%;
+      border: none; }
+    main .contacto__contenedor .contacto__formulario form fieldset .contacto__obligatorio {
+      font-size: 15px; }
+    main .contacto__contenedor .contacto__formulario form fieldset div .contacto__boton {
+      font-size: 20px;
+      padding: 3px;
+      background-color: #384674;
+      color: #b5b9a6;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #252e4b; }
+    main .contacto__contenedor .contacto__formulario form fieldset div .contacto__boton:hover {
+      transform: scale(0.95); }
 
-}
-.recitales__fecha{
-    text-align: right;
-    padding: 0.5rem;   
-}
+/*quienes somos*/
+main .quienessomos .quienessomos__parrafo, main .quienessomos .quienessomos__contenedor {
+  background-color: #b5b9a6;
+  box-shadow: 7px 13px 37px black;
+  padding: 1rem;
+  margin: 1rem; }
 
-/*footer*/
-footer{
-    margin-top: auto;
-}
-footer p{
-    font-size: 1rem;
-    text-align: center;  
-    color: #f1f1ed;
-}
+main h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #adb492;
+  margin-top: 1rem; }
 
-footer div{
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-.redes{
-    width: 2rem;
-    height: 2rem;
-}
-.d-block {
-    display: flex;
-    height: 315px;    
-}
-/*responsive para pc*/
-@media screen and (min-width:1024px){
-/*animaciones menu y footer*/
-    header nav ul li:hover{
-        transform: scale(0.8);
-       
-    }
-    .redes:hover{
-        transform: scale(1.3);
-    }
-
-/*Quienes Somos*/
-.quienessomos__contenedor{
-    display:grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-items: center;
-}
-.musico{
+main .quienessomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  main .quienessomos .quienessomos__parrafo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #e1e1dd;
-    margin: 1rem;
-    padding: 0.5rem;
-    box-shadow: 1px 1px 5px black;
-    border: 1px solid black;
-    text-align: center;
-    font-size:  25px;
-}
-.musico:hover{
-    filter: drop-shadow(2px 2px 5px black);
-}
-
-.musico img{
-    width: 70%;
-}
+    text-align: left; }
+  main .quienessomos .quienessomos__contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem; }
+    main .quienessomos .quienessomos__contenedor .quienessomos__imagen {
+      display: flex;
+      width: 100%; }
 
 /*recitales*/
-.recitales_lista{
-    width: 25%;     
-}
-.recitales__lugar{ 
-    padding-left: 1.5rem;
+main h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #adb492;
+  margin-top: 1rem; }
 
-}
-.recitales__fecha{
-    padding-right: 1.5rem;   
-}
-/*contacto*/
-.contacto__boton:hover{
-    transform: scale(0.95);
-}
+main .recitales {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 15px;
+  font-weight: bold; }
+  main .recitales .recitales__lista {
+    background-color: #b5b9a6;
+    box-shadow: 7px 13px 37px black;
+    border: 1px solid black; }
+    main .recitales .recitales__lista tr .recitales__lugar {
+      text-align: left;
+      padding: 0.5rem; }
+    main .recitales .recitales__lista tr .recitales__fecha {
+      text-align: right;
+      padding: 0.5rem; }
+
 /*videos*/
-.d-block {
-    height: 560px; 
-}
-}
+main h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #adb492;
+  margin-top: 1rem; }
+
+main .container div div div div .d-block {
+  display: flex;
+  height: 315px; }
+
+main .quienessomos .quienessomos__parrafo, main .quienessomos .quienessomos__contenedor {
+  background-color: #b5b9a6;
+  box-shadow: 7px 13px 37px black;
+  padding: 1rem;
+  margin: 1rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*body*/
+body {
+  background-color: #041122;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+/*menu*/
+header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212a46;
+  background-color: #208547; }
+  header nav div .titulo {
+    font-size: 20px; }
+    header nav div .titulo .logo {
+      width: 15%; }
+  header nav div #navbarSupportedContent {
+    justify-content: end; }
+  header nav div div ul li:hover {
+    transform: scale(0.8); }
+
+/*footer*/
+footer {
+  margin-top: auto; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; }
+    footer div .redes {
+      width: 2rem;
+      height: 2rem; }
+    footer div .redes:hover {
+      transform: scale(1.3); }
+  footer p {
+    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+    color: #adb492; }
+
+/*responsive para pc*/
+@media screen and (min-width: 1024px) {
+  /*menu*/
+  header {
+    font-size: 25px; }
+    header nav div .titulo {
+      font-size: 30px; }
+  main .recitales {
+    font-size: 20px; }
+    main .recitales .recitales__lista {
+      width: 25%; }
+      main .recitales .recitales__lista tr .recitales__lugar {
+        margin-left: 1.5rem; }
+      main .recitales .recitales__lista tr .recitales__fecha {
+        margin-right: 1.5rem; }
+  /*videos*/
+  main .container div div div div .d-block {
+    height: 560px; }
+  /*quienes somos*/
+  main .quienessomos {
+    display: flex;
+    flex-direction: row; }
+    main .quienessomos .quienessomos__parrafo {
+      width: 50%;
+      font-size: 20px;
+      height: 440px; }
+    main .quienessomos .quienessomos__imagen {
+      width: 50%; } }
+
+/*contacto*/
+main .contacto__contenedor .contacto__formulario {
+  font-size: 20px;
+  font-weight: none; }

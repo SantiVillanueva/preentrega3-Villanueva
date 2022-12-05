@@ -1,0 +1,47 @@
+/*contacto*/
+//importar archivos secundarios
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+main{
+    .contacto__contenedor{
+        @include flex;
+        padding-top: 2rem;          
+        .contacto__formulario{
+            display: flex;
+            justify-content: center;
+            background-color: $color-contenedor;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 1rem;
+            @include box-shadow;
+            form{
+                fieldset{
+                    div{
+                        .contacto__input{
+                            width: 100%;
+                            border: none;    
+                        }
+                    }    
+                    .contacto__obligatorio{
+                        font-size: 15px;
+                    }               
+                    div{
+                        .contacto__boton{
+                            font-size: 20px;
+                            padding: 3px;
+                            background-color: $color-boton;
+                            color: $color-contenedor;
+                            border-radius: 5px;
+                            box-shadow: 1px 1px 5px #252e4b;
+                        }
+                        .contacto__boton:hover{
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

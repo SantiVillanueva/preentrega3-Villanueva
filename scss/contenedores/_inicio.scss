@@ -1,0 +1,30 @@
+/*inicio*/
+main{
+    .foto__single{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+       
+        a{
+            img{
+                display: flex;
+                width: 100%;
+                animation-name: img-latido;
+                animation-iteration-count: infinite;
+                animation-duration: 2s; 
+                animation-direction: alternate-reverse;
+            }
+        }
+}
+}
+
+
+@keyframes img-latido {
+    0%{
+        transform: scale(1.01)
+} 
+100%{
+    transform: scale(0.95)
+}
+}
